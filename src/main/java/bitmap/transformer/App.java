@@ -3,11 +3,21 @@
  */
 package bitmap.transformer;
 
+import java.io.IOException;
+
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         BitMap bmp = new BitMap(args[0]);
-        System.out.println("Hello World!");
+        String destination = args[1];
+        if(args[2].equals("greyScale")) {
+            bmp.greyScale();
+        }
+        if(args[2].equals("turnGray")){
+            bmp.turnGray();
+        }
+        bmp.writeBmp(destination);
     }
+
 }
