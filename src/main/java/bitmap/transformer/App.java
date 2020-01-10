@@ -17,6 +17,9 @@ public class App {
         if(args[2].equals("turnGray")){
             bmp.turnGray();
         }
+        if(args[2].equals("mirror")){
+            bmp.mirror();
+        }
         bmp.writeBmp(destination);
     }
 
