@@ -52,4 +52,12 @@ public class BitMap {
             }
         }
     }
+    public void mirror() {
+        for(int y = 0; y < this.height; y++) {
+            for (int x = 0; x < this.width; x++) {
+                Color color = new Color(this.imageData.getRGB(x, y));
+                this.imageData.setRGB(y, x, color.getRGB());
+            }
+        }
+    }
 }
