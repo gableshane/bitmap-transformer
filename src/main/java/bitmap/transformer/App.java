@@ -14,11 +14,11 @@ public class App {
         if(args[2].equals("greyScale")) {
             bmp.greyScale();
         }
-        if(args[2].equals("turnGray")){
-            bmp.turnGray();
+        if(args[2].equals("turnGrey")){
+            bmp.turnGrey();
         }
-        if(args[2].equals("mirror")){
-            bmp.mirror();
+        if(args[2].equals("twoHeads")){
+            bmp.twoHeadsMario();
         }
         bmp.writeBmp(destination);
     }

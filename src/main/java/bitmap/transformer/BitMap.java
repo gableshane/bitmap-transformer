@@ -26,7 +26,7 @@ public class BitMap {
     public void writeBmp(String path) throws IOException {
         ImageIO.write(this.imageData,"bmp", new File(path));
     }
-    public void turnGray() {
+    public void turnGrey() {
         for(int y = 0; y < this.height; y++) {
             for(int x = 0; x < this.width; x++) {
                 Color color = new Color(this.imageData.getRGB(x,y));
@@ -52,7 +52,7 @@ public class BitMap {
             }
         }
     }
-    public void mirror() {
+    public void twoHeadsMario() {
         for(int y = 0; y < this.height; y++) {
             for (int x = 0; x < this.width; x++) {
                 Color color = new Color(this.imageData.getRGB(x, y));
